@@ -9,7 +9,7 @@ Luiz Carlos Belem `<belemlc@gmail.com>`
     Usando o Docker (recomendado)
         1) Fazer um clone da imagem: git clone https://github.com/belemlc/desafio-indique-amigo-front.git
         2) Acessar a raiz do projeto clonado
-        3) executar docker fazendo build da umage: docker-compose up --build
+        3) executar docker fazendo build da umage: docker-compose up -d --build
         4) Acessar a plataforma em: http://localhost:8000
 
     Usando o Angular CLI
