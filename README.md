@@ -14,7 +14,8 @@ Luiz Carlos Belem `<belemlc@gmail.com>`
 
     Usando o Angular CLI
         1) Instalar o Node
-        2) Instalar o cli do angular: npm install -g @angular/cli
-        3) Acessar a raiz do projeto e rodar o com: ng server
-        4) Acessar a plataforma em: http://localhost:4200
+        2) Instalar as dependências do projeto: npm install
+        3) Instalar o cli do angular: npm install -g @angular/cli
+        4) Acessar a raiz do projeto e rodar o com: ng server
+        5) Acessar a plataforma em: http://localhost:4200
 
