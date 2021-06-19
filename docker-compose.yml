@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  app:
+    container_name: front-desafio-indique-amigo
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - 8000:80
+    restart: always
+
+
