@@ -1,0 +1,16 @@
+<h3>Status da Indicação</h3>
+<div>
+<mat-form-field appearance="fill" style="width: 400px;">
+  <mat-label>Selecione um status</mat-label>
+  <mat-select [(ngModel)]="selectedValue">
+    <mat-option *ngFor="let s of status" [value]="s.id">
+      {{ s.descricao }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+</div>
+
+<div mat-dialog-actions style="float: right">
+  <button mat-raised-button mat-dialog-open color="primary" (click)="mudarStatus()">Mudar Status</button>
+  <button mat-button mat-dialog-close>Close</button>
+</div>

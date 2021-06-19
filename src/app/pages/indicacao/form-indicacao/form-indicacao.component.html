@@ -1,0 +1,32 @@
+<h1 mat-dialog-title>Adicionar Indicação</h1>
+<form [formGroup]="form" novalidate>
+  <div mat-dialog-content style="width: 800px;">
+
+    <mat-form-field class="form-field-container">
+      <mat-label>Nome Completo</mat-label>
+      <input matInput formControlName="nome">
+    </mat-form-field>
+
+    <mat-form-field class="form-field-container">
+      <mat-label>CPF</mat-label>
+      <input matInput formControlName="cpf" maxlength="11" #input>
+      <mat-hint align="end">{{input.value?.length || 0}}/11</mat-hint>
+    </mat-form-field>
+
+    <mat-form-field class="form-field-container">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email">
+    </mat-form-field>
+
+    <mat-form-field class="form-field-container">
+      <mat-label>Telefone</mat-label>
+      <input matInput formControlName="telefone">
+    </mat-form-field>
+
+  </div>
+
+  <div mat-dialog-actions style="float: right">
+    <button mat-raised-button mat-dialog-open color="primary" (click)="save()" [disabled]="form.invalid">Salvar</button>
+    <button mat-button (click)="closeModal()">Close</button>
+  </div>
+</form>
