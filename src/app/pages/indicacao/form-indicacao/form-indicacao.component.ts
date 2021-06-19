@@ -37,7 +37,6 @@ export class FormIndicacaoComponent implements OnInit {
       await this.indicacaoService.create(this.form.value);
       this.dialogRef.close({success: true});
     } catch (error) {
-      this.dialogRef.close({success: false});
       this._snakbar.open(error.error.message_description, 'Erro', {duration: 4000});
     }
   }
